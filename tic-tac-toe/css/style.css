@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: monospace;
+}
+
+body{
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+}
+
+#board{
+    justify-self: center;
+    align-self: center;
+}
+
+#player-one-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(0, 146, 146);
+    font-size: 1.5rem;
+}
+
+#player-two-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+div[id^="row"] {
+    clear:both
+}
+
+div[id^="row"] div {
+    border: 5px solid black;
+    height: 200px;
+    width: 200px;
+    float: left;
+    text-align: center;
+    font-size: 175px;
+    
+}
+
+#markers {
+    animation: spin-letters 2s linear;
+  }
+
+div#row1 div {
+    border-top: none;
+    margin-top: 25px;
+}
+
+div#row3 div {
+    border-bottom: none;
+}
+
+div[id^="row"] div:first-child {
+    border-left: none;
+}
+
+div[id^="row"] div:last-child {
+    border-right: none;
+}
+
+#end-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+button{
+    margin-top: 25px;
+    border: 1px solid rgb(0, 65, 65);
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(0, 146, 146);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(0, 65, 65);
+}
+
+button:active{
+    outline: none;
+}
+
+#marker{
+    font-size: 175px;
+    margin-bottom: 20px;
+}
+
+@keyframes spin-letters {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sky{
+    background-color: lightblue;
+    width: 100vw;
+    height: 655px;
+    z-index: -1;
+}
+
+.tree-1-leaves-1{
+    background-color: green;
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 55px;
+    top: 230px;
+    z-index: 3;
+}
+
+.tree-1-leaves-2{
+    background-color: rgb(77, 175, 77);
+    border-radius: 80px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50px;
+    top: 340px;
+    z-index: 2;
+}
+
+.tree-1-leaves-3{
+    background-color: rgb(42, 156, 42);
+    border-radius: 90px;
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    left: 180px;
+    top: 380px;
+    z-index: 3;
+}
+
+.tree-1-trunk{
+    background-color: brown;
+    border-radius: 6px;
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    left: 125px;
+    bottom: 75px;
+    z-index: 2;
+}
+
+.tree-2-leaves-1{
+    background-color: rgb(51, 189, 51);
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 940px;
+    top: 270px;
+    z-index: 2;
+}
+
+.tree-2-leaves-2{
+    background-color: rgb(13, 99, 13);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 940px;
+    top: 420px;
+    z-index: 1;
+}
+
+.tree-2-leaves-3{
+    background-color: rgb(82, 235, 82);
+    border-radius: 70px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 1070px;
+    top: 420px;
+    z-index: 2;
+}
+
+.tree-2-trunk{
+    background-color: brown;
+    border-radius: 6px;
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    left: 1025px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.tree-3-leaves-1{
+    background-color: rgb(51, 189, 51);
+    border-radius: 120px;
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: -40px;
+    top: 250px;
+    z-index: 1;
+}
+
+.tree-3-leaves-2{
+    background-color: rgb(13, 99, 13);
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: -10px;
+    top: 400px;
+    z-index: 0;
+}
+
+.tree-3-leaves-3{
+    background-color: rgb(82, 235, 82);
+    border-radius: 70px;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 50px;
+    top: 380px;
+    z-index: 1;
+}
+
+.tree-3-trunk{
+    background-color: brown;
+    border-radius: 6px;
+    width: 55px;
+    height: 150px;
+    position: absolute;
+    left: 25px;
+    bottom: 80px;
+    z-index: 0;
+}
+
+.tree-4-leaves-1{
+    background-color: rgb(51, 189, 51);
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 240px;
+    top: 270px;
+    z-index: 3;
+}
+
+.tree-4-leaves-2{
+    background-color: rgb(13, 99, 13);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 240px;
+    top: 420px;
+    z-index: 3;
+}
+
+.tree-4-leaves-3{
+    background-color: rgb(82, 235, 82);
+    border-radius: 70px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 370px;
+    top: 420px;
+    z-index: 3;
+}
+
+.tree-4-trunk{
+    background-color: brown;
+    border-radius: 6px;
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    left: 325px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.tree-5-leaves-1{
+    background-color: green;
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 640px;
+    top: 230px;
+    z-index: 2;
+}
+
+.tree-5-leaves-2{
+    background-color: rgb(13, 99, 13);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 640px;
+    top: 380px;
+    z-index: 1;
+}
+
+.tree-5-leaves-3{
+    background-color: rgb(82, 235, 82);
+    border-radius: 70px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 770px;
+    top: 380px;
+    z-index: 2;
+}
+
+.tree-5-trunk{
+    background-color: brown;
+    border-radius: 6px;
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    left: 725px;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.cloud-1{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 250px;
+    height: 150px;
+    animation: animate 20s linear infinite;
+}
+
+.cloud-1 div:nth-child(1){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 0;
+    top: 10px;
+}
+.cloud-1 div:nth-child(2){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 75px;
+    top: -65px;
+}
+.cloud-1 div:nth-child(3){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 10px;
+    top: -150px;
+}
+.cloud-1 div:nth-child(4){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 40px;
+    top: -150px;
+}
+
+.cloud-2{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 380px;
+    height: 230px;
+    animation: animate 18s linear infinite;
+    animation-delay: -7s;
+}
+
+.cloud-2 div:nth-child(1){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 0;
+    top: 10px;
+}
+.cloud-2 div:nth-child(2){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 75px;
+    top: -65px;
+}
+.cloud-2 div:nth-child(3){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 30px;
+    top: -220px;
+}
+.cloud-2 div:nth-child(4){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 50px;
+    top: -200px;
+}
+
+.cloud-3{
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    width: 350px;
+    height: 250px;
+    animation: animate 15s linear infinite;
+    animation-delay: -9s;
+}
+
+.cloud-3 div:nth-child(1){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 0;
+    top: 10px;
+}
+.cloud-3 div:nth-child(2){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 75px;
+    top: -65px;
+}
+.cloud-3 div:nth-child(3){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 50px;
+    top: -250px;
+}
+.cloud-3 div:nth-child(4){
+    position: relative;
+    border-radius: 70px;
+    background-color: rgb(231, 230, 230);
+    width: 40%;
+    height: 40%;
+    left: 40px;
+    top: -250px;
+}
+
+.ground{
+    overflow: hidden;
+    background-color: greenyellow;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes animate {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 80%
+    }
+}

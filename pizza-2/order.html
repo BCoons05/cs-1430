@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="skewed-header">
+        <div class="header-bg" style="background-image: url('img/pizza1.jpg');"></div>
+        
+        <div class="skewed-header-wrapper">
+            <div class="skewed-header-content">
+                <div class="heading-wrapper">
+                    <h1>Order Now</h1>
+                </div>
+
+                <div class="link-wrapper"> 
+                    <div class="nav-link">   
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link">   
+                        <a href="order.html">Order Now</a>
+                    </div>
+                    <div class="nav-link">   
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="nav-link">   
+                        <a href="about.html">About Us</a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <img src="img/logo.jpg" id="chef2">
+
+            <p>Little chef is retired now, so this guy is going to be making your pizza. His name is Steve. Pizza Steve. He is the least racist looking chef png on google images</p>
+        </div>
+    </div>
+
+    <div class="form">
+        <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
+            <div class="order">
+                <div class="order-left">
+                    <label for="first">First Name:</label><br>
+                    <input type="text" name="first"><br>
+                    <label for="add1">Address 1:</label><br>
+                    <input type="text" name="add1" required><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" name="city" required><br>
+                    <label for="zip">Zip Code:</label><br>
+                    <input type="text" name="zip" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" name="email" required><br>
+                    
+                </div>
+                <div class="order-right">
+                    <label for="last">Last Name:</label><br>
+                    <input type="text" name="last"><br>
+                    <label for="add2">Address 2:</label><br>
+                    <input type="text" name="add2"><br>
+                    <label for="state">State:</label><br>
+                    <select name="state" required>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select><br>
+                    <label for="phone">Phone number:</label><br>
+                    <input type="text" name="phone" required><br>
+                    
+                </div>
+            </div>
+                <label for="size">Size:</label>
+                <div class="order">
+                    <div>
+                        <input type="radio" name="size" value="small">Small
+                        <input type="radio" name="size" value="Medium">Medium
+                        <input type="radio" name="size" value="Large">Large
+                        <input type="radio" name="size" value="X-Large">X-Large
+                        <input type="radio" name="size" value="I'm Obese">I'm Obese
+                        <input type="radio" name="size" value="party">party
+                        <input type="radio" name="size" value="Calzone">Calzone
+                        <input type="radio" name="size" value="Bite Size">Bite Size
+                        
+                    </div>
+                    <div>
+                        <label for="crust">Crust:</label><br>
+                        <select name="crust" required>
+                            <option value="Regular">Regular</option>
+                            <option value="Thin">Thin</option>
+                            <option value="Deep Dish">Deep Dish</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Cauliflower">Cauliflower</option>
+                            <option value="Bacon Weave">Bacon Weave</option>
+                            <option value="No Crust">No Crust (it's a blob of cheese and sauce)</option>
+                            <option value="Surprise">Surprise Me</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="toppings[]">Toppings</label>
+                        <input type="checkbox" name="toppings[]" value="pepperoni, sausage, bell peppers, onions, olives, mushrooms">Yup!
+                        <input type="checkbox" name="toppings[]" value="pepperoni, sausage, bacon, ham">Man Stuff
+                        <input type="checkbox" name="toppings[]" value="green peppers, olives, tomatoes, mushrooms, pickles">Jo Mamma's Faves
+                        <input type="checkbox" name="toppings[]" value="Pepperoni">Pepperoni
+                        <input type="checkbox" name="toppings[]" value="Olives">Olives
+                        <input type="checkbox" name="toppings[]" value="Green Peppers">Green Peppers
+                        <input type="checkbox" name="toppings[]" value="Jalapenos">Jalapenos
+                        <input type="checkbox" name="toppings[]" value="Sausage">Sausage
+                        <input type="checkbox" name="toppings[]" value="Ham">Ham
+                        <input type="checkbox" name="toppings[]" value="Mushrooms">Mushrooms
+                        <input type="checkbox" name="toppings[]" value="Anchovies">Anchovies
+                        <input type="checkbox" name="toppings[]" value="Fried Egg">Fried Egg
+                        <input type="checkbox" name="toppings[]" value="Hot Sauce">Hot Sauce
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings[]" value="More Cheese">More Cheese
+                        <input type="checkbox" name="toppings[]" value="Pineapples">Pineapples
+                        <input type="checkbox" name="toppings[]" value="Bacon">Bacon
+                        <input type="checkbox" name="toppings[]" value="Tomatoes">Tomatoes
+                        <input type="checkbox" name="toppings[]" value="Chicken">Chicken
+                        <input type="checkbox" name="toppings[]" value="Garlic">Garlic
+                        <input type="checkbox" name="toppings[]" value="Red Pepper Flakes">Red Pepper Flakes
+                        <input type="checkbox" name="toppings[]" value="Pickles">Pickles?
+                        <input type="checkbox" name="toppings[]" value="Unborn Duck Fetus">Unborn Duck Fetus
+                        <input type="checkbox" name="toppings[]" value="Rocky Mountain Oysters">Rocky Mountain Oysters
+                        <input type="checkbox" name="toppings[]" value="Leftovers">Leftovers (whatever we have in the fridge)
+                        <input type="checkbox" name="toppings[]" value="Tiny Chef's Feet">Tiny Chef's Feet (you monster)
+                        <input type="checkbox" name="toppings[]" value="Blood of a Virgin">The Blood of a Virgin
+                    </div>
+                </div>
+            
+            <label for="comments">Comments:</label><br>
+            <textarea name="comments"></textarea><br>
+            
+            <div class="order">
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

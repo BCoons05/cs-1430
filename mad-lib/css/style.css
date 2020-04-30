@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+#story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
