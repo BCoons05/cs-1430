@@ -1,11 +1,224 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <title></title>
+  <title>Brian Coons Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
-<body>
-  <h1>This is Brian Coons' page</h1>
-  <p>By the End of the semester, this page will be my FINAL PROJECT with links to ALL OF MY PROJECTS</p>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">Brian Coons</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>HOME</a></li>
+          <li><a href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>ABOUT ME</a></li>
+          <li><a href="#portfolio"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>PORTFOLIO</a></li>
+          <li><a href="#reflection"><span class="glyphicon glyphicon-font" aria-hidden="true"></span>REFLECTION</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>MORE
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#merch">Merchandise</a></li>
+              <li><a href="#map">Map</a></li>
+              <li><a href="#">Media</a></li> 
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="content-section bg-primary text-white text-center slideanim" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 class="mb-5">Things We Learned</h2>
+      </div>
+      <img id="tech" src="img/javascript-html5-css3-html-css-bootstrap-icon.png" alt="HTML/CSS/JS/Bootstrap">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <h4>
+            <strong>HTML</strong>
+          </h4>
+          <p class="text-faded mb-0">Every project we built utilized HTML</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <h4>
+            <strong>CSS</strong>
+          </h4>
+          <p class="text-faded mb-0">We learned responsive design using CSS</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <h4>
+            <strong>Javascript</strong>
+          </h4>
+          <p class="text-faded mb-0">We used javascript to add conditional logic and manipulate our projects with getElementById</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>
+            <strong>Bootstrap</strong>
+          </h4>
+          <p class="text-faded mb-0">We used the bootstrap library to build stylish responsive pages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="container content-section" id="portfolio">
+      <div class="content-section-heading text-center">
+        <h2 class="mb-5">Class Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="bootstrap-band/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Bootstrap - Band</h2>
+                <p class="mb-0">This project taught the basics of bootstrap. We started with a template and added sections and styling to make it our own</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/band.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="tic-tac-toe/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Tic Tac Toe</h2>
+                <p class="mb-0">My favorite assignment. We used vanilla javascript to build a tic tac toe game. We used bitwise operators to determine win conditions.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/tictactoe.jpg" alt="" >
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="lottery/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Lottery Number Generator</h2>
+                <p class="mb-0">This project had us using javascript to manipulate the dom and generate random lottery numbers</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/lotto.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="mad-lib/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Mad-Libs</h2>
+                <p class="mb-0">For this project we used dialog boxes to get input from the user and then added the responses to the page using javascript and dom manipulation</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/madlib.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="js-birthday/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Happy Birthday</h2>
+                <p class="mb-0">Here we learned the basics of javascript and made a program that accepts input then displays a response on the screen. I added conditional logic to vary the response.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/birthday.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="pizza-2/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Full Pizza Site</h2>
+                <p class="mb-0">This was our midterm. We were asked to make a multipage site for a pizza parlor using HTML and CSS, where a user could order online.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/pizza-full.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="horizontal-menu/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Horizontal Menu</h2>
+                <p class="mb-0">This assignment had us build a horizontal navbar/menu with HTML and CSS</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/menu.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="little-boxes/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Little Boxes</h2>
+                <p class="mb-0">This assignment challenged us to make a picture using only divs and CSS.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/boxes.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="superheroes/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Super Hero</h2>
+                <p class="mb-0">For this assignment we were given some text and asked to style it with CSS</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/superhero.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="image-map/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Mappin it</h2>
+                <p class="mb-0">In this assignment we had to make an image map</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/js.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="tables/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Youtube/tables</h2>
+                <p class="mb-0">This assingment taught the basics of html by having us make tables and embed a youtube video</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/css.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item slideanim" href="pizza-1/index.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Pizza</h2>
+                <p class="mb-0">As a precursor to our full pizza site, we were asked to make a page where an order could be submitted with a form.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/html.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
