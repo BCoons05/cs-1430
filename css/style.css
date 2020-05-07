@@ -1,3 +1,4 @@
+/* TODO Add media for Top, reflection, and contact */
 body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
@@ -61,12 +62,36 @@ body {
     text-decoration: none;
   }
 
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1000px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+  }
+
+  .about-container img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+
   .portfolio-item {
     display: block;
     position: relative;
     overflow: hidden;
     max-width: 530px;
     margin: auto auto 1rem;
+  }
+
+  #portfolio img{
+    height: 200px;
+    width: 100%;
   }
   
   .portfolio-item .caption {
@@ -138,6 +163,41 @@ body {
       height: 250px;
       width: 100%;
     }
+  }
+
+  .reflection-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: #fff;
+  }
+
+  .reflection-text-container{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contact-container a{
+    color: gray;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .contact-container i{
+    font-size: 5rem;
   }
 
   .slideanim {visibility:hidden;}

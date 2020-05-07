@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/f2bd777473.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -29,22 +29,30 @@
           <li><a href="#myPage"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>HOME</a></li>
           <li><a href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>ABOUT ME</a></li>
           <li><a href="#portfolio"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>PORTFOLIO</a></li>
-          <li><a href="#reflection"><span class="glyphicon glyphicon-font" aria-hidden="true"></span>REFLECTION</a></li>
+          <li><a href="#contact"><span class="glyphicon glyphicon-font" aria-hidden="true"></span>Contact</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>MORE
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#merch">Merchandise</a></li>
-              <li><a href="#map">Map</a></li>
-              <li><a href="#">Media</a></li> 
+              <li><a href="#learn">What We Learned</a></li>
+              <li><a href="#reflection">Reflection</a></li>
+              <li><a href="#social">Links</a></li> 
             </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="about-container" id="about">
+    <div class="about-img-container slideanim">
+      <img src="img/photo.jpg" alt="me">
+    </div>
+    <div class="about-text-container slideanim">
+      <p>I am an old man turned Computer Science major. I started developing back in junior high where I made games with flash and actionscript, and built the school webpage in HTML/CSS. In high school I lead a group of students that built and maintained the school site once again. Now I have returned to my roots. I am comfortable with HTML, CSS/SCSS, Bootstrap, React, Javascript, and Python. I am also learning Java and C++ at the moment.</p>
+    </div>
+  </div>
   <section class="content-section bg-primary text-white text-center slideanim" id="services">
-    <div class="container">
+    <div class="container" id="learn">
       <div class="content-section-heading">
         <h2 class="mb-5">Things We Learned</h2>
       </div>
@@ -217,6 +225,31 @@
             </span>
             <img class="img-fluid" src="img/html.jpg" alt="">
           </a>
+        </div>
+      </div>
+    </div>
+    <div class="reflection-container slideanim" id="reflection">
+      <div class="reflection-text-container slideanim">
+        <h2>Reflection</h2>
+        <p>
+          Going in to this class, I really didn't expect to learn much. I came into the class with experience and confidence in HTML, CSS, and Javascript already, but I was surprised with how much I did pick up throughout the course. I had never used javascript to interact with the dom, outside of doing tests. I have been using React for a while now to make one page websites, and after taking this course I now know how to do most of these same things using javascript.
+          <br><br>
+          Another thing that I really enjoyed was Bootstrap. I have never used it before starting this class, and I have never really loved the design portion of building apps, but after learning Bootstrap I am far more comfortable in designing a good looking page and building it according to the plan. 
+        </p>
+      </div>
+    </div>
+    <div class="slideanim" id="contact">
+      <div class="content-section-heading text-center">
+        <h2 class="mb-5">Contact Me</h2>
+      </div>
+      <div class="contact-container">
+        <div><a href="tel:+14356407977"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 435-640-7977</a></div>
+        <div><a href="mailto:Brian.P.Coons@gmail.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Brian.P.Coons@gmail.com</a></div>
+        <div>
+          <a href="https://www.linkedin.com/in/brian-coons-0a973015/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div>
+          <a href="https://github.com/BCoons05"><i class="fab fa-github-square"></i></a>
         </div>
       </div>
     </div>
